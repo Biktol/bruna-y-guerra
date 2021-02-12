@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+h1 {
+  background-color: rgb(187, 187, 187);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: medium;
+}
+
+.hero-image {
+  margin-top: 60px;
+  height: 500px;
+  background-image: url("/assets/header-full.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.menu-container {
+  color: #e62d32;
+  background-color: rgb(228, 228, 228);
+
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  display: block;
+  color: #e62d32;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+a:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+.info {
+  background-color: #eee;
+  padding: 50px 50px;
+}
+
+.services {
+  width: 100%;
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.services-item {
+  font-family: Arial, sans-serif;
+  margin-bottom: 70px;
+  font-size: 11px/1.4em;
+  text-align: center;
+}
+
+.services-item img {
+  width: 250px;
+  height: 180px;
+  margin: 0px auto 10px;
+  display: block;
+}
+
+.policies img {
+  height: 400px;
+}
+
+.contact-container {
+  background-color: #eee;
+}
+
+.contact-form {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  text-align: center;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto 0;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid {
+  border: 1px solid #d55c5f;
+  box-shadow: none; 
+}
+
+.form-row textarea {
+  font-size: 14px;
+
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+.map {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  width: 100%;
+}
+
+.map iframe {
+  height: 50%;
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 2.8em;
+  background-color: rgb(187, 187, 187);
+  height: 100px;
+}
+
+@media only screen and (min-width: 400px) {
+  .menu {
+    width: 370px;
+  }
+}
+
+.map iframe {
+  height: 300px;
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-image {
+    margin-top: 80px;
+  }
+
+  .menu {
+    width: 470px;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .menu {
+    width: 800px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+  }
+
+  h1 {
+    font-size: larger;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-top: 2.5em;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 794px) {
+  .hero-image {
+    margin-top: 45px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  h1 {
+    font-size: x-large;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services-item {
+    margin: 20px 40px 20px 40px;
+  }
+
+  .map iframe {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu a {
+    font-size: 18px;
+  }
+
+  .menu {
+    width: 900px;
+  }
+}
