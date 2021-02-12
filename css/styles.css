@@ -22,7 +22,7 @@ h1 {
 .hero-image {
   margin-top: 60px;
   height: 500px;
-  background-image: url("/assets/header-full.jpg");
+  background-image: url("./assets/header-full.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
